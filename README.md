@@ -118,4 +118,39 @@ A lower bus factor indicates higher dependency on a small number of contributors
 - **autorater_llm.py**  
   Implements LLM-based contributor evaluation with a fallback semantic scoring mechanism.
 
+# Installation
+- Environment Variables
+Create a **.env** file in the project directory and add the following variables:
+```br
+GITHUB_TOKEN=your_github_token
+GROQ_API_KEY=your_groq_api_key
+```
+The GitHub token helps avoid API rate limits, while the Groq API key enables LLM-based contributor evaluation.
+You can also add them in sidebar during execution
 
+- Clone the repository
+- Install Dependency
+```br
+pip install -r requirements.txt
+```
+
+- Running the Dashboard
+```br
+streamlit run app.py
+```
+- Dashboard Brower Local Host
+```br
+http://localhost:8501
+``` 
+
+## Technology Used
+- Python
+- Streamlit
+- GitHub REST API
+- Pandas
+- Altair
+- SentenceTransformers
+- Scikit-learn
+
+## Author
+**Lakshay Baijal**
