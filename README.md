@@ -6,6 +6,11 @@ The dashboard is built using Streamlit and allows users to interactively analyze
 ## Demo Screen Record
 https://github.com/user-attachments/assets/92775fe9-5e60-4065-8ef9-9d832a97473b
 
+## Report
+```br
+https://github.com/LakshayBaijal/Repo-Intelligence_PR-based-LLM-Auto-Rater/blob/main/Report.md
+```
+
 ## Repository Statistics
 
 The dashboard retrieves and displays key repository metrics including:
