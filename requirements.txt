@@ -1,0 +1,9 @@
+streamlit
+requests
+pandas
+numpy
+altair
+openai
+python-dotenv
+sentence-transformers
+scikit-learn
