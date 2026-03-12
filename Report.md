@@ -77,31 +77,32 @@ The dashboard provides an overview of repository health by displaying key statis
 
 The commit activity visualization shows how development activity evolves over time. Peaks in the graph represent periods of higher development activity, while lower areas indicate slower development periods.
 
-![alt text](1.png)
+<img width="1507" height="799" alt="1" src="https://github.com/user-attachments/assets/ad1dee4a-2dc3-4382-9347-d55def41d5e4" />
 
 
 ### Contributor Leaderboard
 The contributor leaderboard aggregates multiple signals such as commits, pull requests, issues, and recent activity. This table helps identify the most active contributors and provides insight into how work is distributed across the contributor community.
 
-![alt text](2.png)
+<img width="1206" height="571" alt="2" src="https://github.com/user-attachments/assets/c7b5ddfb-ad0a-4fdb-b453-34237f8839d2" />
+
 
 ### Code Ownership Heatmap
 
 The code ownership heatmap shows the relationship between contributors and the modules they modify. Darker cells represent a higher number of file modifications. This helps identify areas of the codebase where certain contributors have stronger ownership.
 
-![alt text](3.png)
+<img width="1236" height="545" alt="3" src="https://github.com/user-attachments/assets/591198fb-fc12-4c5b-a9d5-cdb6ad2c157e" />
 
 ### LLM Contributor Evaluation
 
 The LLM-based autorater evaluates contributors using information extracted from their pull requests. The system generates structured scores across several dimensions including code quality, problem significance, review engagement, and contribution consistency.
 
-![alt text](4.png)
+<img width="1448" height="433" alt="4" src="https://github.com/user-attachments/assets/d30146a9-20ce-4bdc-ad40-25fb40e6ca89" />
+
 
 ### Bus Factor Estimation
 The bus factor estimate measures how dependent the project is on a small number of contributors. In this case, the top contributor accounts for approximately 30% of commits, resulting in an estimated bus factor of 2, which indicates moderate reliance on key contributors.
 
-![alt text](5.png)
-
+<img width="509" height="252" alt="5" src="https://github.com/user-attachments/assets/27c00867-1ed2-40f4-b4e4-7ef5f93e6fe1" />
 
 ## Key Findings from the Analysis
 - The repository shows extremely high community adoption
@@ -125,5 +126,6 @@ The commit activity graph shows that development occurs in bursts rather than at
 The estimated bus factor is 2, meaning that the project depends on a small number of core contributors for maintaining development activity. While the repository has many contributors overall, the development workload appears to be concentrated among a few key maintainers.
 
 - LLM-based autorater highlights differences in contributor impact
+
 
 The LLM based autorater evaluation shows that contributors may differ in impact even if they have multiple commits. For example, the contributor steipete receives a total score of 60, indicating strong code quality and consistency but relatively low review engagement. This suggests that the contributor mainly focuses on code contributions rather than reviewing other pull requests.
