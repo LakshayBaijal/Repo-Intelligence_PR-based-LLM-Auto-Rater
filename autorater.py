@@ -1,3 +1,4 @@
+# autorater.py
 import pandas as pd
 
 def _count_recent(commit_dates_iso, days=30):
