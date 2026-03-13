@@ -1,3 +1,4 @@
+# github_api.py
 import os
 import requests
 import time
@@ -92,7 +93,6 @@ def summarize_commits(commits: List[Dict]) -> List[Dict]:
     return out
 
 def get_contributor_prs(owner: str, repo: str, contributor_login: str, token: Optional[str] = None, per_page:int=100, max_pages:int=5) -> List[Dict]:
-    # Fetch pulls and filter by author login; then fetch details, files and reviews for each PR
     pulls = paginate_get(f"/repos/{owner}/{repo}/pulls", token=token, per_page=per_page, max_pages=max_pages, extra_params={"state":"all"})
     contrib = [p for p in pulls if ((p.get("user") or {}).get("login") == contributor_login)]
     detailed = []
