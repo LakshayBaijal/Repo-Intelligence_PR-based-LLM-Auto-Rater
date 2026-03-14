@@ -10,7 +10,7 @@ USE_GROQ = False
 groq_client = None
 GROQ_API_KEY = None
 
-USE_FALLBACK = True
+USE_FALLBACK = False
 FALLBACK_MODEL_NAME = os.environ.get("EMBED_MODEL", "all-MiniLM-L6-v2")
 fallback_model = None
 
