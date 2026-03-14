@@ -3,6 +3,11 @@ This project implements a repository analysis dashboard that provides insights i
 
 The dashboard is built using Streamlit and allows users to interactively analyze any public GitHub repository.
 
+## Live Project Link
+```br
+https://github-repository-analysis-lakshay-baijal.onrender.com/
+```
+
 ## Demo Screen Record
 https://github.com/user-attachments/assets/92775fe9-5e60-4065-8ef9-9d832a97473b
 
