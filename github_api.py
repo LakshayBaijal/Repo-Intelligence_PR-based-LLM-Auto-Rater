@@ -15,7 +15,7 @@ def _headers(token: Optional[str]):
     h = {"Accept": "application/vnd.github.v3+json"}
     token = token or os.getenv("GITHUB_TOKEN")
     if token:
-        h["Authorization"] = f"token {token}"
+        h["Authorization"] = f"Bearer {token.strip()}"
     return h
 
 def _get_raw(url: str, token: Optional[str] = None, params: dict = None):
