@@ -60,7 +60,13 @@ if analyze:
             pulls = get_pulls(owner, repo, token=token, max_pages=max_pull_pages)
             issues = get_issues(owner, repo, token=token, max_pages=1)
     except Exception as e:
-        st.error(f"GitHub API error: {e}")
+        error_msg = str(e)
+        if "401" in error_msg and "Bad credentials" in error_msg:
+            st.error("GitHub API error (401 Bad Credentials): The GitHub Token provided is invalid. Please check that your token was copied correctly, hasn't expired, and has the necessary permissions. If you are using Render environment variables, ensure the GITHUB_TOKEN is completely accurate.")
+        elif "403" in error_msg and "rate limit exceeded" in error_msg.lower():
+            st.error("GitHub API error (403 Rate Limit Exceeded): You have hit the GitHub unauthenticated rate limit. Please provide a valid GitHub Token in the sidebar to bypass this limit.")
+        else:
+            st.error(f"GitHub API error: {e}")
         st.stop()
 
     # Summarize commits into simplified structures
