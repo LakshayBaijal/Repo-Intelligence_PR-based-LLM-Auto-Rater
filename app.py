@@ -29,7 +29,7 @@ with st.sidebar:
 
     # store GitHub token (used by github_api functions)
     if github_token:
-        os.environ["GITHUB_TOKEN"] = github_token
+        os.environ["GITHUB_TOKEN"] = github_token.strip()
 
     owner = st.text_input("Repo owner", value="openclaw")
     repo = st.text_input("Repo name", value="openclaw")
