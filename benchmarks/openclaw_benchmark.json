@@ -1,0 +1,169 @@
+{
+  "repo": "openclaw/openclaw",
+  "timestamp": "2026-05-15T10:53:32.742541+00:00",
+  "elapsed_s": 43.18185999999878,
+  "params": {
+    "commit_pages": 2,
+    "pull_pages": 1,
+    "issue_pages": 1,
+    "contributor_pages": 2,
+    "commit_details": 50,
+    "contributors": 5,
+    "pr_pages": 2,
+    "include_llm": false
+  },
+  "counts": {
+    "contributors": 200,
+    "commits": 200,
+    "pulls": 100,
+    "issues": 100,
+    "commit_details": 42
+  },
+  "metrics": {
+    "requests": {
+      "count": 62,
+      "errors": 13,
+      "latency": {
+        "count": 62,
+        "min": 0.3572048000005452,
+        "max": 3.669611499999519,
+        "avg": 0.6893687112904503,
+        "p50": 0.5984807999993791,
+        "p95": 1.2674924199999618
+      },
+      "by_endpoint": {
+        "/repos/openclaw/openclaw": {
+          "count": 1,
+          "errors": 0,
+          "latency": {
+            "count": 1,
+            "min": 0.7518194000003859,
+            "max": 0.7518194000003859,
+            "avg": 0.7518194000003859,
+            "p50": 0.7518194000003859,
+            "p95": 0.7518194000003859
+          }
+        },
+        "/repos/openclaw/openclaw/contributors": {
+          "count": 2,
+          "errors": 0,
+          "latency": {
+            "count": 2,
+            "min": 0.65865870000016,
+            "max": 1.0641814000009617,
+            "avg": 0.8614200500005609,
+            "p50": 0.8614200500005609,
+            "p95": 1.0439052650009217
+          }
+        },
+        "/repos/openclaw/openclaw/commits": {
+          "count": 2,
+          "errors": 0,
+          "latency": {
+            "count": 2,
+            "min": 0.8169242999993003,
+            "max": 1.3659463000003598,
+            "avg": 1.09143529999983,
+            "p50": 1.09143529999983,
+            "p95": 1.3384952000003068
+          }
+        },
+        "/repos/openclaw/openclaw/pulls": {
+          "count": 6,
+          "errors": 5,
+          "latency": {
+            "count": 6,
+            "min": 0.369755300000179,
+            "max": 3.669611499999519,
+            "avg": 0.9361020000002706,
+            "p50": 0.39332869999998366,
+            "p95": 2.8536230999998224
+          }
+        },
+        "/repos/openclaw/openclaw/issues": {
+          "count": 1,
+          "errors": 0,
+          "latency": {
+            "count": 1,
+            "min": 1.4731838000006974,
+            "max": 1.4731838000006974,
+            "avg": 1.4731838000006974,
+            "p50": 1.4731838000006974,
+            "p95": 1.4731838000006974
+          }
+        },
+        "/repos/openclaw/openclaw/commits/:sha": {
+          "count": 50,
+          "errors": 8,
+          "latency": {
+            "count": 50,
+            "min": 0.3572048000005452,
+            "max": 1.2744032999999035,
+            "avg": 0.6198706840000887,
+            "p50": 0.5957097000000431,
+            "p95": 0.8271058499999525
+          }
+        }
+      }
+    },
+    "pagination": {
+      "pages": 6,
+      "items": 600,
+      "by_endpoint": {
+        "/repos/openclaw/openclaw/contributors": {
+          "pages": 2,
+          "items": 200
+        },
+        "/repos/openclaw/openclaw/commits": {
+          "pages": 2,
+          "items": 200
+        },
+        "/repos/openclaw/openclaw/pulls": {
+          "pages": 1,
+          "items": 100
+        },
+        "/repos/openclaw/openclaw/issues": {
+          "pages": 1,
+          "items": 100
+        }
+      }
+    },
+    "rate_limit": {
+      "limit": "60",
+      "remaining": "0",
+      "reset": "1778844446"
+    }
+  },
+  "llm_metrics": {
+    "groq_calls": 0,
+    "groq_errors": 0,
+    "groq_time_s": 0.0,
+    "fallback_calls": 0,
+    "fallback_errors": 0,
+    "fallback_time_s": 0.0,
+    "prompt_chars": 0,
+    "response_chars": 0
+  },
+  "llm_skipped_reason": null,
+  "llm_scores": {},
+  "errors": [
+    "commit_details:0dc8552cb3ff74af02aa70320c4b1a98658bc5cc:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/0dc8552cb3ff74af02aa70320c4b1a98658bc5cc: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "commit_details:bea597b2d600b88ad330a4c7b5b3a96b39b6a883:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/bea597b2d600b88ad330a4c7b5b3a96b39b6a883: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "commit_details:1458829822127533c78d54caad3615b46379c540:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/1458829822127533c78d54caad3615b46379c540: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "commit_details:396d5b26dad79c34ccd251353af99fe054fff451:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/396d5b26dad79c34ccd251353af99fe054fff451: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "commit_details:e1d69bc43307b08cb8df0e3b06b44733f35d059f:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/e1d69bc43307b08cb8df0e3b06b44733f35d059f: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "commit_details:b24a6d2cbd636b0b39b732c962d58e574c748abe:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/b24a6d2cbd636b0b39b732c962d58e574c748abe: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "commit_details:925861f9b32352ee36064e1a47b1ecc49718b18e:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/925861f9b32352ee36064e1a47b1ecc49718b18e: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "commit_details:aff30f9671a83f7cd373dda03815d902a2b29354:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/commits/aff30f9671a83f7cd373dda03815d902a2b29354: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "contributor_prs:steipete:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/pulls: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "contributor_prs:vincentkoc:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/pulls: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "contributor_prs:shakkernerd:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/pulls: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "contributor_prs:obviyus:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/pulls: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}",
+    "contributor_prs:Takhoffman:GitHub API error 403 at https://api.github.com/repos/openclaw/openclaw/pulls: {'message': \"API rate limit exceeded for 218.185.248.66. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\", 'documentation_url': 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'}"
+  ],
+  "repo_stats": {
+    "stars": 372038,
+    "forks": 77022,
+    "open_issues": 7082
+  }
+}
