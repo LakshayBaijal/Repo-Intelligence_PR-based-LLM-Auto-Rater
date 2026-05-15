@@ -116,7 +116,7 @@ A lower bus factor indicates higher dependency on a small number of contributors
 
 The system includes an automated benchmarking suite that evaluates performance, consistency, and scoring accuracy across multiple repositories.
 
-### 📊 Live Performance & Quality Summary
+### Live Performance & Quality Summary
 Latest benchmark run results (2026-05-15):
 
 | Repository | Scale | Health Score | Top Contributor Avg LLM Score | Consistency (StdDev) | Avg API Latency | Status |
@@ -126,7 +126,7 @@ Latest benchmark run results (2026-05-15):
 
 ---
 
-### 🔍 Heuristic Score Breakdown
+### Heuristic Score Breakdown
 The "Health Score" is calculated using a multi-signal heuristic model:
 
 | Metric | openclaw/openclaw | pallets/flask | Max Possible |
@@ -140,7 +140,7 @@ The "Health Score" is calculated using a multi-signal heuristic model:
 
 ---
 
-### 📦 Data Processing Volume
+### Data Processing Volume
 The dashboard processes significant metadata to generate insights:
 
 | Repository | Total Requests | Pages Processed | Items Fetched | Elapsed Time |
@@ -150,7 +150,7 @@ The dashboard processes significant metadata to generate insights:
 
 ---
 
-### 🧠 LLM Intelligence Metrics (Groq Llama-3.3-70b)
+### LLM Intelligence Metrics (Groq Llama-3.3-70b)
 Qualitative analysis performance for contributor evaluation:
 
 | Repository | Groq Calls | Total LLM Time | Avg Time per Eval | Prompt Volume (Chars) |
@@ -160,7 +160,7 @@ Qualitative analysis performance for contributor evaluation:
 
 ---
 
-### 🛡️ System Efficiency & Reliability
+### System Efficiency & Reliability
 - **Consistency**: The system demonstrates 0.0 Standard Deviation across multiple evaluation runs, ensuring highly reproducible qualitative scores.
 - **Latency Optimization**: Throughput is maximized using optimized pagination (100 items/page) and selective fan-out calls for commit/PR details.
 - **Rate Limit Resilience**: Intelligent header tracking keeps the system within GitHub API quotas (current remaining: 4,800+ requests).
