@@ -106,13 +106,66 @@ The system estimates the repository bus factor based on the commit distribution 
 
 The bus factor is estimated as follows:
 
-| Top Contributor Commit Share | Bus Factor |
-|------|------|
 | < 25% | 3 |
 | 25–50% | 2 |
 | > 50% | 1 |
 
 A lower bus factor indicates higher dependency on a small number of contributors.
+
+## Benchmarks
+
+The system includes an automated benchmarking suite that evaluates performance, consistency, and scoring accuracy across multiple repositories.
+
+### 📊 Live Performance & Quality Summary
+Latest benchmark run results (2026-05-15):
+
+| Repository | Scale | Health Score | Top Contributor Avg LLM Score | Consistency (StdDev) | Avg API Latency | Status |
+|------------|-------|--------------|------------------------------|---------------------|-----------------|--------|
+| **openclaw/openclaw** | AI-Focused | **85.0/100** | **70.0** | 0.0 | 0.81s | SUCCESS |
+| **pallets/flask** | Mature/Stable | **71.58/100** | **55.0** | 0.0 | 0.82s | SUCCESS |
+
+---
+
+### 🔍 Heuristic Score Breakdown
+The "Health Score" is calculated using a multi-signal heuristic model:
+
+| Metric | openclaw/openclaw | pallets/flask | Max Possible |
+|--------|-------------------|---------------|--------------|
+| **Stars Score** | 25.0 | 25.0 | 25.0 |
+| **Forks Score** | 10.0 | 10.0 | 10.0 |
+| **Contributors Score**| 20.0 | 20.0 | 20.0 |
+| **Activity (30d) Score**| 30.0 | 1.8 | 30.0 |
+| **Issue Health Score** | 0.0 | 14.78 | 15.0 |
+| **Total Health Score** | **85.0** | **71.58** | **100.0** |
+
+---
+
+### 📦 Data Processing Volume
+The dashboard processes significant metadata to generate insights:
+
+| Repository | Total Requests | Pages Processed | Items Fetched | Elapsed Time |
+|------------|----------------|-----------------|---------------|--------------|
+| **openclaw/openclaw** | 74 | 50 | 742 | 68.2s |
+| **pallets/flask** | 35 | 24 | 449 | 35.8s |
+
+---
+
+### 🧠 LLM Intelligence Metrics (Groq Llama-3.3-70b)
+Qualitative analysis performance for contributor evaluation:
+
+| Repository | Groq Calls | Total LLM Time | Avg Time per Eval | Prompt Volume (Chars) |
+|------------|------------|----------------|-------------------|-----------------------|
+| **openclaw/openclaw** | 2 | 2.35s | 1.17s | 23,676 |
+| **pallets/flask** | 2 | 2.27s | 1.13s | 6,706 |
+
+---
+
+### 🛡️ System Efficiency & Reliability
+- **Consistency**: The system demonstrates 0.0 Standard Deviation across multiple evaluation runs, ensuring highly reproducible qualitative scores.
+- **Latency Optimization**: Throughput is maximized using optimized pagination (100 items/page) and selective fan-out calls for commit/PR details.
+- **Rate Limit Resilience**: Intelligent header tracking keeps the system within GitHub API quotas (current remaining: 4,800+ requests).
+
+For full technical details, raw logs, and endpoint-level latency distribution, refer to [benchmarks/README.md](benchmarks/README.md).
 
 ## Modules:
 
